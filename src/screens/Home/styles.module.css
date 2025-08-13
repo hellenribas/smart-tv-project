@@ -1,0 +1,69 @@
+.containerHome {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(13, 13, 13), #7B7B7B);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.confirm h1 {
+    color: #fff;
+}
+
+.confirm p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #D1022B;;
+}
+
+.home h1 {
+    font-size: 24px;
+}
+
+.home h2 {
+    font-size: 12px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.option {
+    width: 80%;
+    padding: 0.2rem;
+    font-weight: 600;
+    color: #818796;
+    border-radius: 20px;
+    background-color: #474C5E;
+    border: none;
+}
+
+.isFocused {
+    width: 80%;
+    border: solid #D1022B;
+    padding: 0.2rem;
+    font-weight: 600;
+    color: #D1022B;
+    background-color: #E3EBF8;
+    border-radius: 20px;
+}

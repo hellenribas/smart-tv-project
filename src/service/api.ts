@@ -3,10 +3,10 @@ export interface IResponse {
     id: number;
 }
 
-export async function apiGet(): Promise<IResponse[]> {
-    const BASE_URL = "http://localhost:3000"
-    const Endpoint = "/foods"
+const BASE_URL = process.env.BASE_URL
+const Endpoint = "/foods"
 
+export async function apiGet(): Promise<IResponse[]> {
     const response = await fetch(`${BASE_URL}${Endpoint}`)
     const data: IResponse[] = await response.json()
 

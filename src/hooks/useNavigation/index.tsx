@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
+import { INavigationProps } from "./types";
 
-export function useNavigation({ limit }: { limit: number }) {
+export function useNavigation({ limit }: INavigationProps) {
   const [index, setIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState<number | null>(null);
 
